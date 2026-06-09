@@ -1,27 +1,21 @@
 {
-  "name": "otaku-universe-backend",
+  "name": "otaku-universe-socket-server",
   "version": "1.0.0",
-  "description": "Backend and WebSocket server for Otaku Universe CMS V4",
-  "main": "server.js",
+  "description": "Socket.IO server for real-time synchronization",
+  "main": "socket-server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js"
+    "start": "node socket-server.js",
+    "dev": "nodemon socket-server.js"
   },
-  "keywords": ["anime", "cms", "websocket", "socket.io"],
-  "author": "Tanvir Ahmed",
-  "license": "ISC",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "cloudinary": "^1.41.0",
-    "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
+    "socket.io": "^4.7.2",
     "express": "^4.18.2",
-    "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.0.3",
-    "multer": "^1.4.5-lts.1",
-    "socket.io": "^4.7.2"
+    "cors": "^2.8.5"
   },
   "devDependencies": {
-    "nodemon": "^3.0.2"
+    "nodemon": "^3.0.1"
   }
 }
